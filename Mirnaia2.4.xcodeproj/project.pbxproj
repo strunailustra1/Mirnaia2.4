@@ -15,6 +15,7 @@
 		1E08DD71238AB27B003B4D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E08DD6F238AB27B003B4D43 /* LaunchScreen.storyboard */; };
 		1EAA0653238AF8D8008DD73A /* EducationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0652238AF8D8008DD73A /* EducationListViewController.swift */; };
 		1EAA0655238AF8EA008DD73A /* EducationItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0654238AF8EA008DD73A /* EducationItemViewController.swift */; };
+		1EAA0657238B09FD008DD73A /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0656238B09FD008DD73A /* LanguageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1E08DD72238AB27B003B4D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EAA0652238AF8D8008DD73A /* EducationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationListViewController.swift; sourceTree = "<group>"; };
 		1EAA0654238AF8EA008DD73A /* EducationItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationItemViewController.swift; sourceTree = "<group>"; };
+		1EAA0656238B09FD008DD73A /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1E08DD68238AB278003B4D43 /* ViewController.swift */,
 				1EAA0652238AF8D8008DD73A /* EducationListViewController.swift */,
 				1EAA0654238AF8EA008DD73A /* EducationItemViewController.swift */,
+				1EAA0656238B09FD008DD73A /* LanguageViewController.swift */,
 				1E08DD6A238AB278003B4D43 /* Main.storyboard */,
 				1E08DD6D238AB27B003B4D43 /* Assets.xcassets */,
 				1E08DD6F238AB27B003B4D43 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				1E08DD69238AB278003B4D43 /* ViewController.swift in Sources */,
 				1EAA0655238AF8EA008DD73A /* EducationItemViewController.swift in Sources */,
+				1EAA0657238B09FD008DD73A /* LanguageViewController.swift in Sources */,
 				1EAA0653238AF8D8008DD73A /* EducationListViewController.swift in Sources */,
 				1E08DD65238AB278003B4D43 /* AppDelegate.swift in Sources */,
 				1E08DD67238AB278003B4D43 /* SceneDelegate.swift in Sources */,
