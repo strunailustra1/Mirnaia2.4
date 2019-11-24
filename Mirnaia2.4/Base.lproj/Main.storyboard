@@ -422,14 +422,78 @@
             </objects>
             <point key="canvasLocation" x="3739" y="1160"/>
         </scene>
-        <!--View Controller-->
+        <!--Образование-->
         <scene sceneID="X4y-4c-TS0">
             <objects>
-                <viewController id="AJn-qH-N7r" sceneMemberID="viewController">
+                <viewController title="Образование" id="AJn-qH-N7r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="meo-lm-2bt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип образования" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJ8-qk-gmd">
+                                <rect key="frame" x="16" y="20" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AVM-fL-SJC">
+                                <rect key="frame" x="16" y="101" width="288" height="127"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-WZ-Lyp">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-bw-nRb">
+                                        <rect key="frame" x="0.0" y="35.5" width="48" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Факультет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD0-2r-Dhr">
+                                        <rect key="frame" x="0.0" y="71" width="82" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Специальность" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-xO-jVL">
+                                        <rect key="frame" x="0.0" y="106.5" width="123.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="1wI-F5-ZQy">
+                                <rect key="frame" x="16" y="60.5" width="266" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год начала" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-j4-HSN">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год окончания" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQz-Aw-t2A">
+                                        <rect key="frame" x="149" y="0.0" width="117" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uJ8-qk-gmd" firstAttribute="top" secondItem="Trb-Vn-Fw7" secondAttribute="top" constant="20" id="43t-wj-NYt"/>
+                            <constraint firstItem="AVM-fL-SJC" firstAttribute="leading" secondItem="Trb-Vn-Fw7" secondAttribute="leading" constant="16" id="GTf-0p-vHq"/>
+                            <constraint firstItem="1wI-F5-ZQy" firstAttribute="top" secondItem="uJ8-qk-gmd" secondAttribute="bottom" constant="20" id="McD-mq-GxU"/>
+                            <constraint firstItem="uJ8-qk-gmd" firstAttribute="leading" secondItem="Trb-Vn-Fw7" secondAttribute="leading" constant="16" id="TyZ-AD-2a3"/>
+                            <constraint firstItem="Trb-Vn-Fw7" firstAttribute="trailing" secondItem="AVM-fL-SJC" secondAttribute="trailing" constant="16" id="Xko-kg-LCY"/>
+                            <constraint firstItem="1wI-F5-ZQy" firstAttribute="leading" secondItem="Trb-Vn-Fw7" secondAttribute="leading" constant="16" id="pNS-9W-C0s"/>
+                            <constraint firstItem="AVM-fL-SJC" firstAttribute="top" secondItem="1wI-F5-ZQy" secondAttribute="bottom" constant="20" id="uxH-1S-wZy"/>
+                            <constraint firstItem="Trb-Vn-Fw7" firstAttribute="trailing" secondItem="uJ8-qk-gmd" secondAttribute="trailing" constant="16" id="wcc-tB-58D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Trb-Vn-Fw7"/>
                     </view>
                 </viewController>
