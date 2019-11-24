@@ -10,10 +10,20 @@ import UIKit
 
 class LanguageViewController: UIViewController {
 
+    @IBOutlet var englishLevel: UISegmentedControl!
+    @IBOutlet var frenchLevel: UISegmentedControl!
+    @IBOutlet var germanLevel: UISegmentedControl!
+    
+    var englishLevelIndex: Int!
+    var frenchLevelIndex: Int!
+    var germanLevelIndex: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        englishLevel.selectedSegmentIndex = englishLevelIndex
+        frenchLevel.selectedSegmentIndex = frenchLevelIndex
+        germanLevel.selectedSegmentIndex = germanLevelIndex
     }
     
 
