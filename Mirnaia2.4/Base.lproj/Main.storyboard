@@ -311,7 +311,7 @@
                                         <rect key="frame" x="166.5" y="0.0" width="121.5" height="30"/>
                                         <state key="normal" title="Подробнее"/>
                                         <connections>
-                                            <segue destination="s6C-wa-f96" kind="show" id="bGK-J0-WyR"/>
+                                            <segue destination="I8L-WK-utX" kind="show" id="Rfr-9q-kVF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -329,7 +329,7 @@
                                         <rect key="frame" x="167" y="0.0" width="121" height="30"/>
                                         <state key="normal" title="Подробнее"/>
                                         <connections>
-                                            <segue destination="I8L-WK-utX" kind="show" id="s8p-td-XnF"/>
+                                            <segue destination="s6C-wa-f96" kind="show" id="D1q-RC-S6C"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -468,7 +468,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xd-nW-6bs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xd-nW-6bs">
                                 <rect key="frame" x="16" y="183.5" width="288" height="223.5"/>
                                 <string key="text">- Обработка заявок от клиентов (e-mail, телефон);
 - Работа в системе ServiceDesk (IntraService);
@@ -531,10 +531,10 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbE-rg-t53">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbE-rg-t53">
                                 <rect key="frame" x="16" y="183.5" width="288" height="183"/>
                                 <string key="text">- Решение задач/инцидентов, связанных с работой портала;
-- Работа с mysql, написание сложных аналитических запросов; - Shell: выполнение команд, чтение логов.
+- Работа с mysql, написание сложных аналитических запросов;  - Shell: выполнение команд, чтение логов.
 - Помощь клиентам в работе с rest api;
 - Ручное тестирование.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
