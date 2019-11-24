@@ -185,68 +185,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Школа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTX-US-fss">
-                                <rect key="frame" x="44" y="86" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="nun-sT-umK">
+                                <rect key="frame" x="16" y="20" width="288" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Среднее" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTX-US-fss">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-eJ-oVG">
+                                        <rect key="frame" x="165.5" y="0.0" width="122.5" height="30"/>
+                                        <state key="normal" title="Подробнее"/>
+                                        <connections>
+                                            <segue destination="AJn-qH-N7r" kind="presentation" identifier="schoolId" id="5ke-y5-fyv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ремонтенская гимназия №1 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvn-xx-oWO">
+                                <rect key="frame" x="16" y="60" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Университет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYc-ly-sRW">
-                                <rect key="frame" x="44" y="161" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="2pj-pq-fHu">
+                                <rect key="frame" x="16" y="100.5" width="288" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Высшее" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYc-ly-sRW">
+                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxe-WL-ouz">
+                                        <rect key="frame" x="175.5" y="0.0" width="112.5" height="30"/>
+                                        <state key="normal" title="Подробнее"/>
+                                        <connections>
+                                            <segue destination="AJn-qH-N7r" kind="presentation" identifier="highEducationFirst" id="f3J-7G-IBV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Таганрогский технологический институт Южного федерального университета" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yY-C9-w4k">
+                                <rect key="frame" x="16" y="140.5" width="288" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Университет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5H-49-pG2">
-                                <rect key="frame" x="44" y="236" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Таганрогский технологический институт Южного федерального университета" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZy-XM-K8q">
+                                <rect key="frame" x="16" y="261.5" width="288" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Университет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpp-Lf-Ua5">
-                                <rect key="frame" x="44" y="294" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-eJ-oVG">
-                                <rect key="frame" x="208" y="86" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Подробнее"/>
-                                <connections>
-                                    <segue destination="AJn-qH-N7r" kind="presentation" identifier="schoolId" id="5ke-y5-fyv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-GU-sv9">
-                                <rect key="frame" x="215" y="236" width="66" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Подробнее"/>
-                                <connections>
-                                    <segue destination="AJn-qH-N7r" kind="presentation" identifier="highEducationSecond" id="UeX-BJ-J7K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxe-WL-ouz">
-                                <rect key="frame" x="208" y="157" width="73" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Плдробнее"/>
-                                <connections>
-                                    <segue destination="AJn-qH-N7r" kind="presentation" identifier="highEducationFirst" id="f3J-7G-IBV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qe-Wx-rDt">
-                                <rect key="frame" x="215" y="294" width="66" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Подробнее"/>
-                                <connections>
-                                    <segue destination="AJn-qH-N7r" kind="presentation" identifier="highEducationThird" id="Uj3-4v-NfJ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-hH-VEe">
+                                <rect key="frame" x="16" y="221.5" width="288" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Высшее" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpp-Lf-Ua5">
+                                        <rect key="frame" x="0.0" y="9.5" width="64.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-GU-sv9">
+                                        <rect key="frame" x="180.5" y="0.0" width="107.5" height="30"/>
+                                        <state key="normal" title="Подробнее"/>
+                                        <connections>
+                                            <segue destination="AJn-qH-N7r" kind="presentation" identifier="highEducationSecond" id="UeX-BJ-J7K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nun-sT-umK" firstAttribute="top" secondItem="Cfk-8r-iVR" secondAttribute="top" constant="20" id="3Sw-5A-rFw"/>
+                            <constraint firstItem="ozi-hH-VEe" firstAttribute="leading" secondItem="Cfk-8r-iVR" secondAttribute="leading" constant="16" id="5JQ-2q-1Rm"/>
+                            <constraint firstAttribute="trailing" secondItem="6yY-C9-w4k" secondAttribute="trailing" constant="16" id="8wr-ih-9Df"/>
+                            <constraint firstItem="Cfk-8r-iVR" firstAttribute="trailing" secondItem="mvn-xx-oWO" secondAttribute="trailing" constant="16" id="DBm-tx-qO4"/>
+                            <constraint firstAttribute="trailing" secondItem="QZy-XM-K8q" secondAttribute="trailing" constant="16" id="G7g-0B-WVH"/>
+                            <constraint firstItem="Cfk-8r-iVR" firstAttribute="trailing" secondItem="ozi-hH-VEe" secondAttribute="trailing" constant="16" id="ILX-2b-Jqs"/>
+                            <constraint firstItem="QZy-XM-K8q" firstAttribute="top" secondItem="ozi-hH-VEe" secondAttribute="bottom" constant="10" id="QDz-Nh-Miu"/>
+                            <constraint firstItem="2pj-pq-fHu" firstAttribute="top" secondItem="mvn-xx-oWO" secondAttribute="bottom" constant="20" id="SCb-ys-wmn"/>
+                            <constraint firstItem="Cfk-8r-iVR" firstAttribute="trailing" secondItem="2pj-pq-fHu" secondAttribute="trailing" constant="16" id="VR0-RA-RfP"/>
+                            <constraint firstItem="mvn-xx-oWO" firstAttribute="top" secondItem="nun-sT-umK" secondAttribute="bottom" constant="10" id="ZKd-ji-Uyi"/>
+                            <constraint firstItem="2pj-pq-fHu" firstAttribute="leading" secondItem="Cfk-8r-iVR" secondAttribute="leading" constant="16" id="gZu-x8-hdC"/>
+                            <constraint firstItem="6yY-C9-w4k" firstAttribute="leading" secondItem="Cfk-8r-iVR" secondAttribute="leading" constant="16" id="h5l-Ec-zjb"/>
+                            <constraint firstItem="Cfk-8r-iVR" firstAttribute="trailing" secondItem="nun-sT-umK" secondAttribute="trailing" constant="16" id="jgJ-Mb-rd2"/>
+                            <constraint firstItem="mvn-xx-oWO" firstAttribute="leading" secondItem="Cfk-8r-iVR" secondAttribute="leading" constant="16" id="ngW-sx-BMJ"/>
+                            <constraint firstItem="6yY-C9-w4k" firstAttribute="top" secondItem="2pj-pq-fHu" secondAttribute="bottom" constant="10" id="oZ5-o7-Y36"/>
+                            <constraint firstItem="nun-sT-umK" firstAttribute="leading" secondItem="Cfk-8r-iVR" secondAttribute="leading" constant="16" id="thu-z6-yo4"/>
+                            <constraint firstItem="QZy-XM-K8q" firstAttribute="leading" secondItem="Cfk-8r-iVR" secondAttribute="leading" constant="16" id="ugn-BP-tnt"/>
+                            <constraint firstItem="ozi-hH-VEe" firstAttribute="top" secondItem="6yY-C9-w4k" secondAttribute="bottom" constant="20" id="urX-CL-dal"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Cfk-8r-iVR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="VCR-tR-2nz"/>
@@ -413,6 +445,6 @@
         <image name="image-2" width="320" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uj3-4v-NfJ"/>
+        <segue reference="f3J-7G-IBV"/>
     </inferredMetricsTieBreakers>
 </document>
