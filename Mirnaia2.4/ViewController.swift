@@ -22,7 +22,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        
+        let langEditVC = segue.source as! LanguageViewController
+        englishLabel.text = languageLevel[langEditVC.englishLevel.selectedSegmentIndex]
+        frenchLabel.text = languageLevel[langEditVC.frenchLevel.selectedSegmentIndex]
+        germanLabel.text = languageLevel[langEditVC.germanLevel.selectedSegmentIndex]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,8 +33,7 @@ class ViewController: UIViewController {
         
         langEditVC.englishLevelIndex = getLanguageLevelIndex(searchName: englishLabel.text!)
         langEditVC.frenchLevelIndex = getLanguageLevelIndex(searchName: frenchLabel.text!)
-        langEditVC.germanLevelIndex = getLanguageLevelIndex(searchName: germanLabel.text!)        
-        
+        langEditVC.germanLevelIndex = getLanguageLevelIndex(searchName: germanLabel.text!)
     }
      
     private func getLanguageLevelIndex(searchName: String) -> Int {
