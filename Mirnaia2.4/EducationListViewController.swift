@@ -13,7 +13,8 @@ struct EducationItem {
     let type: String
     let startYear: String
     let endYear: String
-    let nameCity: String
+    let name: String
+    let city: String
     let faculty: String?
     let specialty: String?
     
@@ -35,11 +36,11 @@ class EducationListViewController: UIViewController {
         
         switch segue.identifier {
         case "schoolId":
-            itemVC.educationItem = EducationItem(type: "Ремонтенская гимназия №1", startYear: "1999", endYear: "2010", nameCity: "с. Ремонтное", faculty: nil, specialty: nil)
+            itemVC.educationItem = EducationItem(type: "Среднее", startYear: "1999", endYear: "2010",name: "Ремонтенская гимназия №1", city: "с. Ремонтное", faculty: nil, specialty: nil)
         case "highEducationFirst":
-            itemVC.educationItem = EducationItem(type: "Таганрогский технологический институт Южного федерального университета", startYear: "2010", endYear: "2015", nameCity: "Таганрог", faculty: "Институт нанотехнологий, электроники и прибостроения", specialty: "Проектирование и технология электронно-вычислительных средств (инженер)")
+            itemVC.educationItem = EducationItem(type: "Высшее", startYear: "2010", endYear: "2015", name: "Таганрогский технологический институт Южного федерального университета", city: "Таганрог", faculty: "Институт нанотехнологий, электроники и прибостроения", specialty: "Проектирование и технология электронно-вычислительных средств (инженер)")
         case "highEducationSecond":
-            itemVC.educationItem = EducationItem(type: "Таганрогский технологический институт Южного федерального университета", startYear: "2015", endYear: "2017", nameCity: "Таганрог", faculty: "Институт нанотехнологий, электроники и прибостроения", specialty: "Проектирование и технология электронно-вычислительных средств (магистр)")
+            itemVC.educationItem = EducationItem(type: "Высшее", startYear: "2015", endYear: "2017", name: "Таганрогский технологический институт Южного федерального университета", city: "Таганрог", faculty: "Институт нанотехнологий, электроники и прибостроения", specialty: "Проектирование и технология электронно-вычислительных средств (магистр)")
         default:
             break
         }

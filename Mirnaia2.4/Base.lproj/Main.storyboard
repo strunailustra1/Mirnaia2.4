@@ -180,7 +180,7 @@
         <!--Образование-->
         <scene sceneID="41j-Do-XjF">
             <objects>
-                <viewController id="K9s-5K-6Yf" sceneMemberID="viewController">
+                <viewController id="K9s-5K-6Yf" customClass="EducationListViewController" customModule="Mirnaia2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vda-BB-quQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,7 +410,7 @@
         <!--Образование-->
         <scene sceneID="X4y-4c-TS0">
             <objects>
-                <viewController title="Образование" id="AJn-qH-N7r" sceneMemberID="viewController">
+                <viewController title="Образование" id="AJn-qH-N7r" customClass="EducationItemViewController" customModule="Mirnaia2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="meo-lm-2bt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -424,7 +424,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AVM-fL-SJC">
                                 <rect key="frame" x="16" y="101" width="288" height="127"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-WZ-Lyp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-WZ-Lyp">
                                         <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -436,13 +436,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Факультет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD0-2r-Dhr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Факультет" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD0-2r-Dhr">
                                         <rect key="frame" x="0.0" y="71" width="82" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Специальность" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-xO-jVL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Специальность" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-xO-jVL">
                                         <rect key="frame" x="0.0" y="106.5" width="123.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -481,6 +481,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Trb-Vn-Fw7"/>
                     </view>
+                    <connections>
+                        <outlet property="city" destination="dDR-bw-nRb" id="mpL-rE-Bw5"/>
+                        <outlet property="endYear" destination="bQz-Aw-t2A" id="dba-ye-wct"/>
+                        <outlet property="faculty" destination="oD0-2r-Dhr" id="hb7-uO-KP2"/>
+                        <outlet property="name" destination="CSW-WZ-Lyp" id="vZc-n4-PCE"/>
+                        <outlet property="speciality" destination="QO3-xO-jVL" id="r7v-ig-Y8S"/>
+                        <outlet property="startYear" destination="cfA-j4-HSN" id="u1o-Rt-Non"/>
+                        <outlet property="type" destination="uJ8-qk-gmd" id="bof-hf-qZb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nen-gR-Fcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,15 +12,26 @@ class EducationItemViewController: UIViewController {
  
     var educationItem: EducationItem!
     
+    @IBOutlet var type: UILabel!
+    @IBOutlet var startYear: UILabel!
+    @IBOutlet var endYear: UILabel!
+    @IBOutlet var name: UILabel!
+    @IBOutlet var city: UILabel!
+    @IBOutlet var faculty: UILabel!
+    @IBOutlet var speciality: UILabel!
+    
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
         
-        
-
-        // Do any additional setup after loading the view.
+        type.text = educationItem.type
+        startYear.text = educationItem.startYear
+        endYear.text = educationItem.endYear
+        name.text = educationItem.name
+        city.text = educationItem.city
+        faculty.text = educationItem.faculty
+        speciality.text = educationItem.specialty
     }
+
     
 
     /*
