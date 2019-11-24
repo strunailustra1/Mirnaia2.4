@@ -168,7 +168,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HPo-Qx-QCb"/>
+                    <tabBarItem key="tabBarItem" title="О себе" image="person.fill" catalog="system" id="HPo-Qx-QCb"/>
                     <navigationItem key="navigationItem" title="О себе" id="rPK-PJ-a5q">
                         <barButtonItem key="rightBarButtonItem" title="Образование" id="5RZ-Ih-1gg"/>
                     </navigationItem>
@@ -286,7 +286,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cfk-8r-iVR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="VCR-tR-2nz"/>
+                    <tabBarItem key="tabBarItem" title="Образование" image="book.fill" catalog="system" id="VCR-tR-2nz"/>
                     <navigationItem key="navigationItem" title="Образование" id="1xI-hL-2rJ">
                         <barButtonItem key="rightBarButtonItem" title="Опыт работы" id="hwV-M1-Cns"/>
                     </navigationItem>
@@ -408,13 +408,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QfE-fW-fFT">
                                 <rect key="frame" x="16" y="20" width="288" height="61.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Английский" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dto-oB-lme">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Английский" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dto-oB-lme">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-XM-Wja">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-XM-Wja">
                                         <rect key="frame" x="0.0" y="30.5" width="288" height="32"/>
                                         <segments>
                                             <segment title="Разговорный"/>
@@ -423,6 +423,9 @@
                                         </segments>
                                     </segmentedControl>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yit-XM-Wja" firstAttribute="width" secondItem="QfE-fW-fFT" secondAttribute="width" id="QRa-CW-HDr"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-2l-yFd">
                                 <rect key="frame" x="16" y="101.5" width="288" height="61.5"/>
@@ -442,6 +445,9 @@
                                         </segments>
                                     </segmentedControl>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="tfw-zL-lg0" firstAttribute="width" secondItem="AEl-2l-yFd" secondAttribute="width" id="YUM-KA-xWh"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-21-otf">
                                 <rect key="frame" x="16" y="183" width="288" height="61.5"/>
@@ -461,6 +467,9 @@
                                         </segments>
                                     </segmentedControl>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="bvv-ki-itI" firstAttribute="width" secondItem="qUl-21-otf" secondAttribute="width" id="jEu-HD-0pe"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTc-D6-7HA">
                                 <rect key="frame" x="110" y="284.5" width="100" height="32"/>
@@ -737,11 +746,11 @@
             </objects>
             <point key="canvasLocation" x="4418" y="-380"/>
         </scene>
-        <!--Item-->
+        <!--Опыт работы-->
         <scene sceneID="qUh-J5-WfB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Nx-wd-MxF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="AUG-OL-Or2"/>
+                    <tabBarItem key="tabBarItem" title="Опыт работы" image="person.3.fill" catalog="system" id="AUG-OL-Or2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LBj-bF-5TQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -758,7 +767,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="image-2" width="320" height="320"/>
+        <image name="person.3.fill" catalog="system" width="72" height="35"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f3J-7G-IBV"/>
